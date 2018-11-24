@@ -1,0 +1,131 @@
+/* fonts imported from Google */
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserat:400,700');
+
+body {
+    font-style: 'Lato';
+    background-color: rgb(237, 255, 78) !important;
+}
+.button-body {
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+}
+.my-button {
+    background: white;
+    border: 1px solid #939393;    
+    padding: 25px;    
+    cursor: pointer;    
+    border-radius: 20px;
+    text-transform: uppercase;    
+}
+.my-button:hover {
+    background: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 25px;
+    cursor: pointer;
+    color: #efefef !important;
+    transition: .2s ease-in-out;
+}
+
+figcaption {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    margin: 15px 0;
+}
+.image-small {
+    width: 100%;
+}
+
+tbody tr td:nth-child(1) {
+    font-weight: 600;
+}
+.modal-footnote {
+    background: #f9f16d;
+    text-align: center;
+    padding: 7px;
+    color: #606060;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+
+.desc {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    line-height: 30px;
+    margin-top: 170px;
+}
+.desc span {
+    color: red;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.desc p {
+    margin: 0;
+    padding: 0;
+}
+.desc p:nth-child(1) {
+    text-transform: uppercase;    
+}
+.desc p:nth-child(2), p:nth-child(3) {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(12, 12, 12);
+}
+.close {
+    padding: 5px 10px !important;
+}
+.btn-okay {
+    background: orange;
+    padding: 9px 25px !important;
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    font-size: 18px
+}
+
+.table-shadow {
+    box-shadow: 2px 0px 10px #686868; 
+}
+
+
+/* Overwritten CSS */
+.table th {
+    /* border-top: 1px solid #f6f6f6 !important; */
+    border-top: none !important;
+}
+th {
+    font-family: 'Open Sans', sans-serif;
+    color: #ff0a72;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.table td {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.modal-content {
+    box-shadow: 1px 2px 10px black;
+    background: url('back.svg') no-repeat;
+    background-size: cover;
+    
+}
+.modal-header {
+    border-bottom: none !important;
+}
+
+/* respnsiveness */
+@media only screen and (max-width: 990px) {
+    .desc {
+        text-align: left;
+        margin: 10px 0;
+    }
+}
