@@ -20,7 +20,7 @@ body {
     border: 1px solid #939393;    
     padding: 25px;    
     cursor: pointer;    
-    border-radius: 20px;
+    border-radius: 20px;    
     text-transform: uppercase;    
 }
 .my-button:hover {
@@ -50,7 +50,6 @@ tbody tr td:nth-child(1) {
     padding: 7px;
     color: #606060;
     border-radius: 5px;
-    margin-top: 14px;
 }
 
 .desc {
@@ -58,7 +57,7 @@ tbody tr td:nth-child(1) {
     font-family: 'Montserrat', sans-serif;
     text-align: right;
     line-height: 30px;
-    margin-top: 170px;
+    margin-top: 60px;
 }
 .desc span {
     color: red;
@@ -70,7 +69,8 @@ tbody tr td:nth-child(1) {
     padding: 0;
 }
 .desc p:nth-child(1) {
-    text-transform: uppercase;    
+    text-transform: uppercase; 
+    font-style: italic;
 }
 .desc p:nth-child(2), p:nth-child(3) {
     text-transform: uppercase;
@@ -83,7 +83,7 @@ tbody tr td:nth-child(1) {
 }
 .btn-okay {
     background: orange;
-    padding: 9px 25px !important;
+    padding: 4px 15px !important;
     font-family: 'Poppins', sans-serif;
     color: white !important;
     font-size: 18px
@@ -95,21 +95,26 @@ tbody tr td:nth-child(1) {
 
 
 /* Overwritten CSS */
+.table {
+    border-radius: 5px;
+}
 .table th {
     /* border-top: 1px solid #f6f6f6 !important; */
     border-top: none !important;
-}
-th {
+    padding: .5rem !important;
     font-family: 'Open Sans', sans-serif;
     color: #ff0a72;
     font-weight: 600;
-    font-size: 20px;
-    
+    font-size: 0.9em; 
+
 }
+
 .table td {
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 0.8em;
     font-weight: 400;
+	padding: .5rem !important;
+
 
 }
 .modal-content {
@@ -120,6 +125,12 @@ th {
 }
 .modal-header {
     border-bottom: none !important;
+}
+.modal-body {
+	padding: 0.5rem !important;
+}
+.modal-footer {
+	padding: 0.5rem !important;
 }
 
 /* respnsiveness */
